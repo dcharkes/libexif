@@ -14,7 +14,11 @@ dev_dependencies:
   flutter_lints: ^3.0.0
 
 ffigen:
-  output: 'lib/libexif.dart'
+  output:
+    bindings: 'lib/libexif.dart'
+    symbol-file:
+      output: 'package:libexif/symbols.yaml'
+      import-path: 'package:libexif/base.dart'
   name: 'LibExif'
   description: 'Dart bindings to libexif'
   exclude-all-by-default: true
