@@ -1,6 +1,6 @@
 format_version: 1.0.0
 files:
-  package:libexif/base.dart:
+  package:libexif/libexif.dart:
     used-config:
       ffi-native: false
     symbols:
@@ -382,8 +382,6 @@ files:
         name: ExifRational
       c:@SA@ExifSRational:
         name: ExifSRational
-      c:@T@va_list:
-        name: va_list
       c:exif-content.h@T@ExifContent:
         name: ExifContent
       c:exif-content.h@T@ExifContentForeachEntryFunc:
@@ -438,3 +436,5 @@ files:
         name: MnoteOlympusEntry
       c:mnote-pentax-entry.h@T@MnotePentaxEntry:
         name: MnotePentaxEntry
+      c:stdarg.h@T@va_list:
+        name: va_list

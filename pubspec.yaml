@@ -1,10 +1,9 @@
 name: libexif
-description: "Dart bindings for libexif."
+description: 'Dart bindings for libexif.'
 version: 0.0.1
 
 environment:
   sdk: '>=3.3.0-71.0.dev <4.0.0'
-  flutter: '>=3.3.0'
 
 dependencies:
   ffi: any
@@ -18,7 +17,7 @@ ffigen:
     bindings: 'lib/libexif.dart'
     symbol-file:
       output: 'package:libexif/symbols.yaml'
-      import-path: 'package:libexif/base.dart'
+      import-path: 'package:libexif/libexif.dart'
   name: 'LibExif'
   description: 'Dart bindings to libexif'
   exclude-all-by-default: true
